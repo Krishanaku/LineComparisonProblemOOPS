@@ -30,7 +30,6 @@ namespace LineComparisonProblemOOPS
             Console.WriteLine(checkX);
             Console.WriteLine(checkY);
 
-
         }
     }
 }
