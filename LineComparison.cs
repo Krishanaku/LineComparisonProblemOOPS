@@ -25,10 +25,22 @@ namespace LineComparisonProblemOOPS
             double lengthOfLine = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             Console.WriteLine("The lenght of line using co-ordinate : " + lengthOfLine);
 
+            //Use Case 3.
             bool checkX = Math.Equals(x2 - x1, lengthOfLine);
             bool checkY = Math.Equals(y2 - y1, lengthOfLine);
-            Console.WriteLine(checkX);
-            Console.WriteLine(checkY);
+
+            if ((x1, y1) == (x2, y2))
+            {
+                Console.WriteLine("x1 , y1 and x2 , y2 both are equal");
+            }
+            else if (x1 > x2 && y1 > y2)
+            {
+                Console.WriteLine("x1 , y1 is greater then x2 , y2");
+            }
+            else
+            {
+                Console.WriteLine("x2 , y2 is greater than x1 , y1 ");
+            }
 
         }
     }
